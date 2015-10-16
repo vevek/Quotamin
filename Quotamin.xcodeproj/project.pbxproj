@@ -195,6 +195,7 @@
 				TargetAttributes = {
 					63A4AF3D1BCD787A00D7EFB9 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = RNBM386DE4;
 					};
 					63A4AF531BCD787A00D7EFB9 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -402,7 +403,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Quotamin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vevek.Quotamin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,7 +416,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vevek Selvam (CJL49NSUU3)";
 				INFOPLIST_FILE = Quotamin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vevek.Quotamin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +492,7 @@
 				63A4AF6A1BCD787A00D7EFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63A4AF6B1BCD787A00D7EFB9 /* Build configuration list for PBXNativeTarget "QuotaminTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +501,7 @@
 				63A4AF6D1BCD787A00D7EFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63A4AF6E1BCD787A00D7EFB9 /* Build configuration list for PBXNativeTarget "QuotaminUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +510,7 @@
 				63A4AF701BCD787A00D7EFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
