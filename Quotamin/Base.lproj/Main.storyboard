@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Quotes" image="QuoteBook" selectedImage="QuoteBook" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Quotes" image="Image-Book" selectedImage="Image-Book" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +39,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="Gear" selectedImage="Gear" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Image-Gear" selectedImage="Image-Gear" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,7 +66,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Gear" width="24" height="24"/>
-        <image name="QuoteBook" width="24" height="24"/>
+        <image name="Image-Book" width="24" height="24"/>
+        <image name="Image-Gear" width="24" height="24"/>
     </resources>
 </document>

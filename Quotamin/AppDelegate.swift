@@ -15,45 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // Override point for customization after application launch.
-        
-        //Actions
-        let firstAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
-        firstAction.identifier = "FIRST_ACTION"
-        firstAction.title = "Open Quotamin"
-        
-        firstAction.activationMode = UIUserNotificationActivationMode.Background
-        firstAction.destructive = false
-        firstAction.authenticationRequired = false
-        
-        let secondAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
-        secondAction.identifier = "SECOND_ACTION"
-        secondAction.title = "Another in an hour"
-        
-        secondAction.activationMode = UIUserNotificationActivationMode.Foreground
-        secondAction.destructive = false
-        secondAction.authenticationRequired = false
-        
-        
-        //Initialise categories
-        var firstCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
-        firstCategory.identifier = "FIRST_CATEGORY"
-        
-        let defaultActions:NSArray = [firstAction, secondAction]
-        
-        firstCategory.setActions(defaultActions as! [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Default)
-        
-        //NSSet all category (for?)
-        let categories:NSSet = NSSet(objects: firstCategory)
-        
-        
-        //Initialise settings
-        let mySettings:UIUserNotificationSettings =  UIUserNotificationSettings(forTypes: UIUserNotificationType([.Alert,.Badge]) , categories: nil)
-        
-        UIApplication.sharedApplication().registerUserNotificationSettings(mySettings)
-        
-        
-        
         
         return true
     }

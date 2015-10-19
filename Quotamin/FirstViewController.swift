@@ -13,7 +13,29 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        
+//        var dateComp:NSDateComponents = NSDateComponents()
+//        dateComp.year = 2014;
+//        dateComp.month = 06;
+//        dateComp.day = 09;
+//        dateComp.hour = 15;
+//        dateComp.minute = 26;
+//        dateComp.timeZone = NSTimeZone.systemTimeZone()
+//        
+//        var calender:NSCalendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)!
+//        var date:NSDate = calender.dateFromComponents(dateComp)!
+//        
+        
+        var notification:UILocalNotification = UILocalNotification()
+        notification.category = "FIRST_CATEGORY"
+        notification.alertBody = "Hi, I am a notification"
+//        notification.fireDate = date
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        
+        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
