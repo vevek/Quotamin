@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Quotes-->
@@ -16,8 +16,34 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-2h-feE">
+                                <rect key="frame" x="189" y="393" width="223" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="SY5-HV-R2h"/>
+                                    <constraint firstAttribute="width" constant="223" id="aza-Y8-uBU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="39"/>
+                                <state key="normal" title="Quotify!"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bba-4a-CIz">
+                                <rect key="frame" x="169" y="116" width="263" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="9YD-2U-GgC"/>
+                                    <constraint firstAttribute="width" constant="263" id="MPv-PS-9Ur"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.63529411759999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bba-4a-CIz" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="9QD-ag-hHs"/>
+                            <constraint firstItem="bba-4a-CIz" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="96" id="KEi-uP-ykB"/>
+                            <constraint firstItem="bba-4a-CIz" firstAttribute="centerX" secondItem="Bfl-2h-feE" secondAttribute="centerX" id="X7C-Vp-BYm"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Bfl-2h-feE" secondAttribute="bottom" constant="81" id="ys3-95-GCc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Quotes" image="Image-Book" selectedImage="Image-Book" id="acW-dT-cKf"/>
                 </viewController>
@@ -36,8 +62,7 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="Image-Gear" selectedImage="Image-Gear" id="cPa-gy-q4n"/>
                 </viewController>
@@ -52,7 +77,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -69,4 +93,5 @@
         <image name="Image-Book" width="24" height="24"/>
         <image name="Image-Gear" width="24" height="24"/>
     </resources>
+    <color key="tintColor" red="0.29873981057230986" green="0.7346175161667432" blue="0.76186191099476441" alpha="1" colorSpace="calibratedRGB"/>
 </document>
