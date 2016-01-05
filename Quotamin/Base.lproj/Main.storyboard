@@ -50,7 +50,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Quotes" image="Image-Book" selectedImage="Image-Book" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="newQuoteLabel" destination="bba-4a-CIz" id="pRS-Hr-FGV"/>
+                        <outlet property="newQuoteTextLabel" destination="bba-4a-CIz" id="uDu-OL-xnm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

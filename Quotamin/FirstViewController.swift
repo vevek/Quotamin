@@ -10,19 +10,67 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    
+    // MARK: Properties
     @IBOutlet weak var newQuoteButton: UIButton!
-    @IBOutlet weak var newQuoteLabel: UILabel!
+    @IBOutlet weak var newQuoteTextLabel: UILabel!
+    var k: Int = 0
     
     override func viewDidLoad() {
-
         super.viewDidLoad()
         
+
+        /*
+        //Alert Code
+            let alertController = UIAlertController(title: "Welcome!", message:
+                "Enjoy using Quotamin!", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        */
         
     }
     
+    
+    // MARK: Actions
+    
     @IBAction func newQuoteButtonPress(sender: UIButton) {
-        newQuoteLabel.text = "Default Text"
+        k = random() % 10; // Generate random number from 0 to 10
+        
+        
+        if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        else if(k == 0){
+            newQuoteTextLabel.text = "Default Text"
+        }
+        
     }
     
 
