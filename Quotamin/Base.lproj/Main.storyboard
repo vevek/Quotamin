@@ -17,15 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-2h-feE">
-                                <rect key="frame" x="189" y="393" width="223" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="77" id="SY5-HV-R2h"/>
-                                    <constraint firstAttribute="width" constant="223" id="aza-Y8-uBU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="39"/>
-                                <state key="normal" title="Quotify!"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bba-4a-CIz">
                                 <rect key="frame" x="169" y="116" width="263" height="112"/>
                                 <constraints>
@@ -36,6 +27,18 @@
                                 <color key="textColor" red="0.99215686270000003" green="0.63529411759999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-2h-feE">
+                                <rect key="frame" x="189" y="393" width="223" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="SY5-HV-R2h"/>
+                                    <constraint firstAttribute="width" constant="223" id="aza-Y8-uBU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="39"/>
+                                <state key="normal" title="Quotify!"/>
+                                <connections>
+                                    <action selector="newQuoteButtonPress:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ibv-yZ-fCg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -46,6 +49,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Quotes" image="Image-Book" selectedImage="Image-Book" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="newQuoteLabel" destination="bba-4a-CIz" id="pRS-Hr-FGV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

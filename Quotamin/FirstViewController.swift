@@ -9,16 +9,21 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
     
     
+    @IBOutlet weak var newQuoteButton: UIButton!
+    @IBOutlet weak var newQuoteLabel: UILabel!
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
         
         
     }
     
+    @IBAction func newQuoteButtonPress(sender: UIButton) {
+        newQuoteLabel.text = "Default Text"
+    }
     
 
     override func didReceiveMemoryWarning() {
