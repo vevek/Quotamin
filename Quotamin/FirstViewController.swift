@@ -13,23 +13,29 @@ class FirstViewController: UIViewController {
     // MARK: Properties
     @IBOutlet weak var newQuoteButton: UIButton!
     @IBOutlet weak var newQuoteTextLabel: UILabel!
-    var k: Int = 0
+    var k: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
+    }
+  
+    /*
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
         /*
         //Alert Code
-            let alertController = UIAlertController(title: "Welcome!", message:
-                "Enjoy using Quotamin!", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
+        let alertController = UIAlertController(title: "Welcome!", message:
+        "Enjoy using Quotamin!", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
         */
         
     }
-    
+    */
     
     // MARK: Actions
     
