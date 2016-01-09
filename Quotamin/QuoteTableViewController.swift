@@ -30,13 +30,13 @@ class QuoteTableViewController: UITableViewController {
     func loadQuotes(){
         let quotes1 = QuoteData(quoteID: "1", quoteDetail: "It's not who I am underneath. But what I do that defines me.", quoteAuthor: "Batman")
         
-        let quotes2 = QuoteData(quoteID: "2", quoteDetail: "DETA2222SSS", quoteAuthor: "ME222E")
+        let quotes2 = QuoteData(quoteID: "2", quoteDetail: "Courage, dear heart.", quoteAuthor: "C.S Lewis")
         
-        let quotes3 = QuoteData(quoteID: "3", quoteDetail: "DE3SSSS", quoteAuthor: "MEEE33E")
+        let quotes3 = QuoteData(quoteID: "3", quoteDetail: "Look at the stars and not at your feet. Be curious.", quoteAuthor: "Stephen Hawking")
         
-        let quotes4 = QuoteData(quoteID: "4", quoteDetail: "DET44444S", quoteAuthor: "ME4444E")
+        let quotes4 = QuoteData(quoteID: "4", quoteDetail: "May my heart be kind, my mind fierce, and my spirit brave.", quoteAuthor: "Kate Forsyth")
         
-        let quotes5 = QuoteData(quoteID: "5", quoteDetail: "DET5555SSSS", quoteAuthor: "ME555EE")
+        let quotes5 = QuoteData(quoteID: "5", quoteDetail: "No matter what anybody tells you, words and ideas can change the world. ", quoteAuthor: "Dead Poets Society")
         
         let quotes6 = QuoteData(quoteID: "6", quoteDetail: "DET6SSS", quoteAuthor: "ME6EEE")
         
@@ -55,10 +55,7 @@ class QuoteTableViewController: UITableViewController {
         let quotes13 = QuoteData(quoteID: "13", quoteDetail: "DET6SSS", quoteAuthor: "ME6EEE")
         
         let quotes14 = QuoteData(quoteID: "14", quoteDetail: "DE7SSS", quoteAuthor: "M7EEE")
-        
-        
-        
-        
+
         quotes += [quotes1, quotes2, quotes3, quotes4, quotes5, quotes6, quotes7, quotes8, quotes9, quotes10, quotes11, quotes12, quotes13, quotes14]
         
     }
@@ -89,6 +86,7 @@ class QuoteTableViewController: UITableViewController {
         let quote = quotes[indexPath.row]
 
         // Configure the cell...
+        
         cell.quoteIDLabel.text = quote.quoteID
         cell.quoteDetailLabel.text = quote.quoteDetail
         cell.quoteAuthorLabel.text = quote.quoteAuthor
