@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bba-4a-CIz">
@@ -30,12 +30,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-2h-feE">
-                                <rect key="frame" x="189" y="442" width="223" height="77"/>
+                                <rect key="frame" x="189" y="393" width="223" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="SY5-HV-R2h"/>
                                     <constraint firstAttribute="width" constant="223" id="aza-Y8-uBU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="39"/>
                                 <state key="normal" title="Quotify!">
                                     <color key="titleColor" red="0.29873981059999999" green="0.73461751620000004" blue="0.761861911" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -55,7 +55,7 @@
                     <navigationItem key="navigationItem" id="Vx4-Ct-Wgf">
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="8ZV-8d-DaQ">
                             <connections>
-                                <segue destination="qSA-wf-cw0" kind="show" id="BtX-vb-I1h"/>
+                                <segue destination="qSA-wf-cw0" kind="show" id="e3g-Xd-8vC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -72,12 +72,12 @@
             <objects>
                 <tableViewController id="qSA-wf-cw0" customClass="QuoteTableViewController" customModule="Quotamin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="fiF-Aa-iRm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="QuoteTableViewCell" rowHeight="110" id="bPf-8O-RA9" customClass="QuoteTableViewCell" customModule="Quotamin" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="110"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bPf-8O-RA9" id="YF6-1l-7Le">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
@@ -135,11 +135,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="nkN-6b-bk9">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="xjy-4I-yyO">
-                            <connections>
-                                <segue destination="iQQ-m6-BN6" kind="show" id="dk1-Ap-guZ"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="xjy-4I-yyO"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="369-II-hSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -174,6 +170,12 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.40397398567666842" green="0.98319162923314285" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="iQQ-m6-BN6" kind="relationship" relationship="viewControllers" id="Ikn-Mu-6Tk"/>
@@ -193,6 +195,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C55-vi-xfH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -208,8 +211,5 @@
         <image name="Image-Book" width="24" height="24"/>
         <image name="Image-Gear" width="24" height="24"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="dk1-Ap-guZ"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.29873981057230986" green="0.7346175161667432" blue="0.76186191099476441" alpha="1" colorSpace="calibratedRGB"/>
 </document>
