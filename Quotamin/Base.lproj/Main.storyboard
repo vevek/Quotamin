@@ -55,7 +55,7 @@
                     <navigationItem key="navigationItem" id="Vx4-Ct-Wgf">
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="8ZV-8d-DaQ">
                             <connections>
-                                <segue destination="qSA-wf-cw0" kind="show" id="e3g-Xd-8vC"/>
+                                <segue destination="qSA-wf-cw0" kind="show" id="ydr-rk-O57"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="-366"/>
+            <point key="canvasLocation" x="1436" y="-687"/>
         </scene>
         <!--Quote Table View Controller-->
         <scene sceneID="4fC-WY-ZPY">
@@ -80,7 +80,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bPf-8O-RA9" id="YF6-1l-7Le">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cI6-To-4Oi">
@@ -134,13 +134,82 @@
                             <outlet property="delegate" destination="qSA-wf-cw0" id="XSa-lK-guo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="nkN-6b-bk9">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="xjy-4I-yyO"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="nkN-6b-bk9"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="369-II-hSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2381" y="-366"/>
+            <point key="canvasLocation" x="2271" y="-687"/>
+        </scene>
+        <!--Reminders-->
+        <scene sceneID="1MA-0H-ToI">
+            <objects>
+                <viewController id="fZL-NO-yB3" userLabel="Reminders" customClass="SecondViewController" customModule="Quotamin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QUi-Gg-upr"/>
+                        <viewControllerLayoutGuide type="bottom" id="T7f-af-bKz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4GO-8T-8cq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gED-Ua-cJf">
+                                <rect key="frame" x="531" y="37" width="51" height="31"/>
+                                <color key="onTintColor" red="0.29873981059999999" green="0.73461751620000004" blue="0.761861911" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </switch>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="20" translatesAutoresizingMaskIntoConstraints="NO" id="AzV-FF-tW0">
+                                <rect key="frame" x="0.0" y="151" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="474135158.47452402">
+                                    <!--2016-01-10 16:12:38 +0000-->
+                                </date>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnh-Ak-9qf">
+                                <rect key="frame" x="531" y="375" width="50" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="3d8-bK-Jkp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="dailyNotificationSetButtonMethod:" destination="fZL-NO-yB3" eventType="touchUpInside" id="Hwc-AR-Vvl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Daily Notifications:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpl-1k-mAR">
+                                <rect key="frame" x="11" y="32" width="276" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="dnT-sk-nvJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gED-Ua-cJf" firstAttribute="trailing" secondItem="4GO-8T-8cq" secondAttribute="trailingMargin" id="A0Z-TK-RJ1"/>
+                            <constraint firstItem="gED-Ua-cJf" firstAttribute="centerX" secondItem="Rnh-Ak-9qf" secondAttribute="centerX" id="DWq-hU-BLM"/>
+                            <constraint firstItem="Rnh-Ak-9qf" firstAttribute="top" secondItem="AzV-FF-tW0" secondAttribute="bottom" constant="8" symbolic="YES" id="F7b-Ye-lFk"/>
+                            <constraint firstItem="Rnh-Ak-9qf" firstAttribute="leading" secondItem="gED-Ua-cJf" secondAttribute="leading" id="GDw-q5-aSd"/>
+                            <constraint firstItem="AzV-FF-tW0" firstAttribute="top" secondItem="gED-Ua-cJf" secondAttribute="bottom" constant="87" id="K6l-rH-uHh"/>
+                            <constraint firstItem="T7f-af-bKz" firstAttribute="top" secondItem="Rnh-Ak-9qf" secondAttribute="bottom" constant="137" id="YL5-6B-JFj"/>
+                            <constraint firstItem="tpl-1k-mAR" firstAttribute="top" secondItem="QUi-Gg-upr" secondAttribute="bottom" constant="18" id="bzN-Eq-Ipl"/>
+                            <constraint firstItem="gED-Ua-cJf" firstAttribute="centerY" secondItem="tpl-1k-mAR" secondAttribute="centerY" id="hAJ-TQ-vsm"/>
+                            <constraint firstItem="AzV-FF-tW0" firstAttribute="leading" secondItem="4GO-8T-8cq" secondAttribute="leading" id="vqZ-hJ-4Xd"/>
+                            <constraint firstItem="gED-Ua-cJf" firstAttribute="top" secondItem="QUi-Gg-upr" secondAttribute="bottom" constant="13" id="xbi-W0-cQT"/>
+                            <constraint firstItem="tpl-1k-mAR" firstAttribute="leading" secondItem="4GO-8T-8cq" secondAttribute="leadingMargin" id="xg9-9m-6AH"/>
+                            <constraint firstAttribute="trailing" secondItem="AzV-FF-tW0" secondAttribute="trailing" id="zhP-6T-JKD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reminders" image="Image-Alarm" selectedImage="Image-Alarm" id="QZG-PX-aC0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDs-HR-7xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="0.0"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wg7-f3-ORb">
@@ -159,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778" y="422"/>
+            <point key="canvasLocation" x="670" y="723"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -179,7 +248,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="iQQ-m6-BN6" kind="relationship" relationship="viewControllers" id="Ikn-Mu-6Tk"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="RP3-Zw-eA1"/>
+                        <segue destination="fZL-NO-yB3" kind="relationship" relationship="viewControllers" id="mZP-KH-F1N"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="rO8-qV-0c4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -204,11 +274,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNQ-G7-Rhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778" y="-366"/>
+            <point key="canvasLocation" x="670" y="-687"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image-Book" width="24" height="24"/>
+        <image name="Image-Alarm" width="32" height="32"/>
+        <image name="Image-Book" width="32" height="32"/>
         <image name="Image-Gear" width="24" height="24"/>
     </resources>
     <color key="tintColor" red="0.29873981057230986" green="0.7346175161667432" blue="0.76186191099476441" alpha="1" colorSpace="calibratedRGB"/>
