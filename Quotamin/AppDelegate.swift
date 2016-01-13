@@ -17,13 +17,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // Override point for customization after application launch.
-
-
-        
-        
-        
         return true
     }
+    
+    // MARK: QUICK ACTIONS START
+    enum Shortcut: String {
+        case Home = "Home"
+        case List = "List"
+        case Reminders = "Reminders"
+        case Settings = "Settings"
+    }
+    
+    @available(iOS 9.0, *)
+    func handleQuickAction(shortcutItem: UIApplicationShortcutItem) -> Bool {
+        var quickActionHandled = false
+        let type = shortcutItem.type.componentsSeparatedByString(".").last!
+        if let shortcutType = Shortcut.init(rawValue: type) {
+            switch shortcutType {
+            case .Home:
+                quickActionHandled = true
+            case .List:
+                quickActionHandled = true
+            case .Reminders:
+                quickActionHandled = true
+            case .Settings:
+                quickActionHandled = true
+            }
+        }
+        
+        return quickActionHandled
+    }
+    //MARK: QUICK ACTIONS FINISH
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
