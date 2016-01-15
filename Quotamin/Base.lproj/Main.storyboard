@@ -19,16 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bba-4a-CIz">
-                                <rect key="frame" x="169" y="116" width="263" height="112"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="112" id="9YD-2U-GgC"/>
-                                    <constraint firstAttribute="width" constant="263" id="MPv-PS-9Ur"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-2h-feE">
                                 <rect key="frame" x="189" y="393" width="223" height="77"/>
                                 <constraints>
@@ -43,13 +33,33 @@
                                     <action selector="newQuoteButtonPress:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ibv-yZ-fCg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pf-u1-Dki">
+                                <rect key="frame" x="20" y="265" width="566" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.29873981059999999" green="0.73461751620000004" blue="0.761861911" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bba-4a-CIz">
+                                <rect key="frame" x="20" y="72" width="566" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="9YD-2U-GgC"/>
+                                    <constraint firstAttribute="width" constant="263" id="MPv-PS-9Ur"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Bfl-2h-feE" firstAttribute="top" secondItem="1Pf-u1-Dki" secondAttribute="bottom" constant="90" id="6ww-AU-a68"/>
                             <constraint firstItem="bba-4a-CIz" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="9QD-ag-hHs"/>
                             <constraint firstItem="bba-4a-CIz" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="96" id="KEi-uP-ykB"/>
                             <constraint firstItem="bba-4a-CIz" firstAttribute="centerX" secondItem="Bfl-2h-feE" secondAttribute="centerX" id="X7C-Vp-BYm"/>
+                            <constraint firstItem="1Pf-u1-Dki" firstAttribute="trailing" secondItem="bba-4a-CIz" secondAttribute="trailing" id="mFi-Bj-ryg"/>
+                            <constraint firstItem="1Pf-u1-Dki" firstAttribute="top" secondItem="bba-4a-CIz" secondAttribute="bottom" constant="24" id="mbY-sy-ldU"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Bfl-2h-feE" secondAttribute="bottom" constant="81" id="ys3-95-GCc"/>
+                            <constraint firstItem="1Pf-u1-Dki" firstAttribute="leading" secondItem="bba-4a-CIz" secondAttribute="leading" id="z4W-gr-5Q0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vx4-Ct-Wgf">
@@ -60,12 +70,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="newQuoteAuthorLabel" destination="1Pf-u1-Dki" id="bDj-B3-vAU"/>
                         <outlet property="newQuoteTextLabel" destination="bba-4a-CIz" id="uDu-OL-xnm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1436" y="-687"/>
+            <point key="canvasLocation" x="1406" y="-687"/>
         </scene>
         <!--Quote Table View Controller-->
         <scene sceneID="4fC-WY-ZPY">
