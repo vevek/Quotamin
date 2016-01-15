@@ -23,10 +23,6 @@ class FirstViewController: UIViewController {
         
         loadQuotes()
         
-        k = random() % 14; // Generate random number from 0 to 10
-        newQuoteTextLabel.text = quotes[k!].quoteDetail
-        newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
     }
   
     /*
