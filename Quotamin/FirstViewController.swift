@@ -22,6 +22,8 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         loadQuotes()
+        newQuoteTextLabel.text = "Press the button!"
+        newQuoteAuthorLabel.text = "Come on... MOTIVATION AWAITS"
         
     }
   
