@@ -38,24 +38,24 @@ class QuoteTableViewController: UITableViewController {
         
         let quotes5 = QuoteData(quoteID: "5", quoteDetail: "No matter what anybody tells you, words and ideas can change the world. ", quoteAuthor: "Dead Poets Society")
         
-        let quotes6 = QuoteData(quoteID: "6", quoteDetail: "DET6SSS", quoteAuthor: "ME6EEE")
+        let quotes6 = QuoteData(quoteID: "6", quoteDetail: "Peace cannot be kept by force; It can only be achieved by understanding.", quoteAuthor: "Albert Einstein")
         
-        let quotes7 = QuoteData(quoteID: "7", quoteDetail: "DE7SSS", quoteAuthor: "M7EEE")
+        let quotes7 = QuoteData(quoteID: "7", quoteDetail: "In three words I can sum up everything I have learned about life: 'It Goes On'", quoteAuthor: "Robert Frost")
         
-        let quotes8 = QuoteData(quoteID: "8", quoteDetail: "DETAILSSSS", quoteAuthor: "MEEEEE")
+        let quotes8 = QuoteData(quoteID: "8", quoteDetail: "You are not entitled to your opinion. You are entitled to your informed opinion. No one is entitled to be ignorant.", quoteAuthor: "Harlan Ellison")
         
-        let quotes9 = QuoteData(quoteID: "9", quoteDetail: "DETA2222SSS", quoteAuthor: "ME222E")
+        let quotes9 = QuoteData(quoteID: "9", quoteDetail: "The secret of genius is to carry the spirit of the child into old age, which means never losing your enthusiasm.", quoteAuthor: "Aldous Huxley")
         
-        let quotes10 = QuoteData(quoteID: "10", quoteDetail: "DE3SSSS", quoteAuthor: "MEEE33E")
+        let quotes10 = QuoteData(quoteID: "10", quoteDetail: "Many people will walk in and out of your life, but only true friends will leave footprints in your heart.", quoteAuthor: "Eleanor Roosevelt")
         
-        let quotes11 = QuoteData(quoteID: "11", quoteDetail: "DET44444S", quoteAuthor: "ME4444E")
+        let quotes11 = QuoteData(quoteID: "11", quoteDetail: "When you see a person without a smile, give them one of yours.", quoteAuthor: "Zig Ziglar")
         
-        let quotes12 = QuoteData(quoteID: "12", quoteDetail: "DET5555SSSS", quoteAuthor: "ME555EE")
+        let quotes12 = QuoteData(quoteID: "12", quoteDetail: "In order to move forward we have to leave behind our old way of thinking.", quoteAuthor: "Anonymous")
         
-        let quotes13 = QuoteData(quoteID: "13", quoteDetail: "DET6SSS", quoteAuthor: "ME6EEE")
+        let quotes13 = QuoteData(quoteID: "13", quoteDetail: "Be yourself. Everyone else is already taken.", quoteAuthor: "Oscar Wilde")
         
-        let quotes14 = QuoteData(quoteID: "14", quoteDetail: "DE7SSS", quoteAuthor: "M7EEE")
-
+        let quotes14 = QuoteData(quoteID: "14", quoteDetail: "Change is the essence of life; be willing to surrender what you are for what you could become.", quoteAuthor: "Reinhold Niebuhr")
+        
         quotes += [quotes1, quotes2, quotes3, quotes4, quotes5, quotes6, quotes7, quotes8, quotes9, quotes10, quotes11, quotes12, quotes13, quotes14]
         
     }
