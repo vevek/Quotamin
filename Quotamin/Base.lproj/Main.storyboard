@@ -291,7 +291,7 @@
     <resources>
         <image name="Image-Alarm" width="32" height="32"/>
         <image name="Image-Book" width="32" height="32"/>
-        <image name="Image-Gear" width="24" height="24"/>
+        <image name="Image-Gear" width="32" height="32"/>
     </resources>
     <color key="tintColor" red="0.29873981057230986" green="0.7346175161667432" blue="0.76186191099476441" alpha="1" colorSpace="calibratedRGB"/>
 </document>

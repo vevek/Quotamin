@@ -17,14 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="UW3-03-O7x">
-                                <rect key="frame" x="262" y="262" width="76" height="76"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="UW3-03-O7x">
+                                <rect key="frame" x="141" y="145" width="318" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="318" id="RPV-Im-Gyn"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UW3-03-O7x" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XyM-kg-pLE"/>
-                            <constraint firstItem="UW3-03-O7x" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ey2-hh-ivz"/>
+                            <constraint firstItem="UW3-03-O7x" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="125" id="5Jz-96-QgT"/>
+                            <constraint firstItem="UW3-03-O7x" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Axp-mz-wbH"/>
+                            <constraint firstItem="UW3-03-O7x" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KHn-1H-YoA"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -34,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="76" height="76"/>
+        <image name="LaunchImage" width="76" height="76"/>
     </resources>
 </document>
