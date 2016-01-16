@@ -14,8 +14,10 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var newQuoteButton: UIButton!
     @IBOutlet weak var newQuoteTextLabel: UILabel!
     @IBOutlet weak var newQuoteAuthorLabel: UILabel!
-    var k: Int?
+    var randomQuoteSelector: Int?
+    var randomColorSelector: Int?
     var quotes = [QuoteData]()
+    
     
     
     override func viewDidLoad() {
@@ -23,7 +25,7 @@ class FirstViewController: UIViewController {
         
         loadQuotes()
         newQuoteTextLabel.text = "Press the button!"
-        newQuoteAuthorLabel.text = "Come on... MOTIVATION AWAITS"
+        newQuoteAuthorLabel.text = "MOTIVATION AWAITS"
         
     }
   
@@ -80,11 +82,59 @@ class FirstViewController: UIViewController {
     // MARK: END QUOTE DATA LOAD
     
     
+    
     // MARK: Actions
     
+
+    
     @IBAction func newQuoteButtonPress(sender: UIButton) {
-        k = random() % 14; // Generate random number from 0 to 10
+        randomQuoteSelector = random() % 14; // Generate random number from 0 to 14
+        randomColorSelector = random() % 13; // Generate random number from 0 to 10
         
+        newQuoteTextLabel.text = quotes[randomQuoteSelector!].quoteDetail
+        newQuoteAuthorLabel.text = quotes[randomQuoteSelector!].quoteAuthor
+        
+        
+        if(randomColorSelector == 0){
+                sender.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 1){
+                sender.setTitleColor(UIColor.brownColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 2){
+            sender.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 3){
+            sender.setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 4){
+            sender.setTitleColor(UIColor.yellowColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 5){
+            sender.setTitleColor(UIColor.purpleColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 6){
+            sender.setTitleColor(UIColor.cyanColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 7){
+            sender.setTitleColor(UIColor.magentaColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 8){
+            sender.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 9){
+            sender.setTitleColor(UIColor.grayColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 10){
+            sender.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal)
+        }
+        else if(randomColorSelector == 11){
+            sender.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
+        }
+
+
+        
+        /*
         
         if(k == 0){
             newQuoteTextLabel.text = quotes[k!].quoteDetail
@@ -250,6 +300,8 @@ class FirstViewController: UIViewController {
             newQuoteTextLabel.text = quotes[k!].quoteDetail
             newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
         }
+        
+        */
 
         
     }
@@ -264,6 +316,5 @@ class FirstViewController: UIViewController {
     }
 
     
-
 }
 
