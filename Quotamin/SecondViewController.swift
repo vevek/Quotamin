@@ -23,7 +23,7 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func dailyNotificationSetButtonMethod(sender: UIButton) {
-
+        
     }
     
 
