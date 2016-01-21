@@ -56,7 +56,88 @@ class QuoteTableViewController: UITableViewController {
         
         let quotes14 = QuoteData(quoteID: "14", quoteDetail: "Change is the essence of life; be willing to surrender what you are for what you could become.", quoteAuthor: "Reinhold Niebuhr")
         
-        quotes += [quotes1, quotes2, quotes3, quotes4, quotes5, quotes6, quotes7, quotes8, quotes9, quotes10, quotes11, quotes12, quotes13, quotes14]
+        let quotes15 = QuoteData(quoteID: "15", quoteDetail: "You can feel sore tomorrow or you can feel sorry tomorrow. You choose.", quoteAuthor: "Anonymous")
+        
+        let quotes16 = QuoteData(quoteID: "16", quoteDetail: "When I was able to get down the road a ways and look back, I realized success is 90% perseverance. The key is to stay in the game.", quoteAuthor: "Trevor Rees-Jones")
+        
+        let quotes17 = QuoteData(quoteID: "17", quoteDetail: "Whatever you are, be a good one.", quoteAuthor: "Abraham Lincoln")
+        
+        let quotes18 = QuoteData(quoteID: "18", quoteDetail: "If you dream it, you can do it.", quoteAuthor: "Walt Disney")
+        
+        let quotes19 = QuoteData(quoteID: "19", quoteDetail: "Never, never, never give up.", quoteAuthor: "Winston Churchill")
+        
+        let quotes20 = QuoteData(quoteID: "20", quoteDetail: "Don’t wait. The time will never be just right.", quoteAuthor: "Napoleon Hill")
+        
+        let quotes21 = QuoteData(quoteID: "21", quoteDetail: "If not us, who? If not now, when?", quoteAuthor: "John F. Kennedy")
+        
+        let quotes22 = QuoteData(quoteID: "22", quoteDetail: "Everything you can imagine is real.", quoteAuthor: "Pablo Picasso")
+        
+        
+        let quotes23 = QuoteData(quoteID: "23", quoteDetail: "I can, therefore I am.", quoteAuthor: "Simone Weil")
+        
+        
+        let quotes24 = QuoteData(quoteID: "24", quoteDetail: "Remember no one can make you feel inferior without your consent.", quoteAuthor: "Eleanor Roosevelt")
+        
+        
+        let quotes25 = QuoteData(quoteID: "25", quoteDetail: "Turn your wounds into wisdom.", quoteAuthor: "Oprah Winfrey")
+        
+        
+        let quotes26 = QuoteData(quoteID: "26", quoteDetail: "Wherever you go, go with all your heart.", quoteAuthor: "Confucius")
+        
+        
+        let quotes27 = QuoteData(quoteID: "27", quoteDetail: "Do what you can, with what you have, where you are.", quoteAuthor: "Theodore Roosevelt")
+        
+        
+        let quotes28 = QuoteData(quoteID: "28", quoteDetail: "Hope is a waking dream.", quoteAuthor: "Aristotle")
+        
+        
+        let quotes29 = QuoteData(quoteID: "29", quoteDetail: "Action is the foundational key to all success.", quoteAuthor: "Pablo Picasso")
+        
+        
+        let quotes30 = QuoteData(quoteID: "30", quoteDetail: "Do one thing every day that scares you.", quoteAuthor: "Eleanor Roosevelt")
+        
+        let quotes31 = QuoteData(quoteID: "31", quoteDetail: "You must do the thing you think you cannot do.", quoteAuthor: "Eleanor Roosevelt")
+        
+        let quotes32 = QuoteData(quoteID: "32", quoteDetail: "Don’t regret the past, just learn from it.", quoteAuthor: "Ben Ipock")
+        
+        let quotes33 = QuoteData(quoteID: "33", quoteDetail: "Believe you can and you’re halfway there.", quoteAuthor: "Theodore Roosevelt")
+        
+        let quotes34 = QuoteData(quoteID: "34", quoteDetail: "Live what you love.", quoteAuthor: "Jo Deurbrouck")
+        
+        let quotes35 = QuoteData(quoteID: "35", quoteDetail: "The power of imagination makes us infinite.", quoteAuthor: "John Muir")
+        
+        let quotes36 = QuoteData(quoteID: "36", quoteDetail: "Eighty percent of success is showing up.", quoteAuthor: "Woody Allen")
+        
+        let quotes37 = QuoteData(quoteID: "37", quoteDetail: "To be the best, you must be able to handle the worst.", quoteAuthor: "Wilson Kanadi")
+        
+        let quotes38 = QuoteData(quoteID: "38", quoteDetail: "A jug fills drop by drop.", quoteAuthor: "Buddha")
+        
+        let quotes39 = QuoteData(quoteID: "39", quoteDetail: "The best way out is always through.", quoteAuthor: "Robert Frost")
+        
+        let quotes40 = QuoteData(quoteID: "40", quoteDetail: "If you have never failed you have never lived.", quoteAuthor: "Anonymous")
+        
+        let quotes41 = QuoteData(quoteID: "41", quoteDetail: "Hope is the heartbeat of the soul.", quoteAuthor:"Michelle Horst")
+        
+        let quotes42 = QuoteData(quoteID: "42", quoteDetail: "Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.", quoteAuthor: "Samuel Beckett")
+        
+        let quotes43 = QuoteData(quoteID: "43", quoteDetail: "All you need is love.", quoteAuthor: "John Lennon")
+        
+        let quotes44 = QuoteData(quoteID: "44", quoteDetail: "It does not matter how slowly you go as long as you do not stop.", quoteAuthor: "Confucius")
+        
+        let quotes45 = QuoteData(quoteID: "45", quoteDetail: "It is never too late to be what you might have been.", quoteAuthor: "Reinhold Niebuhr")
+        
+        let quotes46 = QuoteData(quoteID: "46", quoteDetail: "We become what we think about.", quoteAuthor: "Earl Nightingale")
+        
+        let quotes47 = QuoteData(quoteID: "47", quoteDetail: "An obstacle is often a stepping stone.", quoteAuthor: "Prescott Bush")
+        
+        let quotes48 = QuoteData(quoteID: "48", quoteDetail: "Dream big and dare to fail.", quoteAuthor: "Norman Vaughan")
+        
+        let quotes49 = QuoteData(quoteID: "49", quoteDetail: "Men are born to succeed, not fail.", quoteAuthor: "Henry David Thoreau")
+        
+        let quotes50 = QuoteData(quoteID: "50", quoteDetail: "May you live every day of your life.", quoteAuthor: "Jonathan Swift")
+        
+        
+        quotes += [quotes1, quotes2, quotes3, quotes4, quotes5, quotes6, quotes7, quotes8, quotes9, quotes10, quotes11, quotes12, quotes13, quotes14, quotes15, quotes16, quotes17, quotes18, quotes19, quotes20, quotes21, quotes22, quotes23, quotes24, quotes25, quotes26, quotes27, quotes28, quotes29, quotes30, quotes31, quotes32, quotes33, quotes34, quotes35, quotes36, quotes37, quotes38, quotes39, quotes40, quotes41, quotes42,  quotes43, quotes44, quotes45, quotes46, quotes47, quotes48, quotes49, quotes50]
         
     }
 
