@@ -175,7 +175,7 @@ class FirstViewController: UIViewController {
         newQuoteAuthorLabel.text = quotes[randomQuoteSelector!].quoteAuthor
         
         
-        if(randomColorSelector == 0){
+    /*    if(randomColorSelector == 0){
                 sender.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
         }
         else if(randomColorSelector == 1){
@@ -212,7 +212,7 @@ class FirstViewController: UIViewController {
             sender.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
         }
 
-
+        */
         
         /*
         

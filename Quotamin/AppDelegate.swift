@@ -21,32 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // MARK: QUICK ACTIONS START
-    enum Shortcut: String {
-        case Home = "Home"
-        case List = "List"
-        case Reminders = "Reminders"
-        case Settings = "Settings"
-    }
     
-    @available(iOS 9.0, *)
-    func handleQuickAction(shortcutItem: UIApplicationShortcutItem) -> Bool {
-        var quickActionHandled = false
-        let type = shortcutItem.type.componentsSeparatedByString(".").last!
-        if let shortcutType = Shortcut.init(rawValue: type) {
-            switch shortcutType {
-            case .Home:
-                quickActionHandled = true
-            case .List:
-                quickActionHandled = true
-            case .Reminders:
-                quickActionHandled = true
-            case .Settings:
-                quickActionHandled = true
-            }
-        }
-        
-        return quickActionHandled
-    }
     //MARK: QUICK ACTIONS FINISH
 
     func applicationWillResignActive(application: UIApplication) {
