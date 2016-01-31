@@ -175,11 +175,24 @@ class FirstViewController: UIViewController {
         newQuoteAuthorLabel.text = quotes[randomQuoteSelector!].quoteAuthor
         
         
-    /*    if(randomColorSelector == 0){
-                sender.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+        
+
+        
+        
+        
+        
+
+        
+    }
+    
+    // MARK: Button Color Loader
+    func buttonColorSelector(sender: UIButton) {
+    
+        if(randomColorSelector == 0){
+            sender.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
         }
         else if(randomColorSelector == 1){
-                sender.setTitleColor(UIColor.brownColor(), forState: UIControlState.Normal)
+            sender.setTitleColor(UIColor.brownColor(), forState: UIControlState.Normal)
         }
         else if(randomColorSelector == 2){
             sender.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
@@ -211,178 +224,6 @@ class FirstViewController: UIViewController {
         else if(randomColorSelector == 11){
             sender.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
         }
-
-        */
-        
-        /*
-        
-        if(k == 0){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 1){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 2){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 3){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 4){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 5){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 6){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 7){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 8){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 9){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 10){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 11){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 12){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 13){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 14){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 15){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 16){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 17){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 18){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 19){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 20){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 21){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 22){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 23){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 24){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 25){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 26){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 27){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 28){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 29){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 30){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 31){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 32){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 33){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 34){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 35){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 36){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 37){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 38){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 39){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        else if(k == 40){
-            newQuoteTextLabel.text = quotes[k!].quoteDetail
-            newQuoteAuthorLabel.text = quotes[k!].quoteAuthor
-        }
-        
-        */
-
         
     }
     
