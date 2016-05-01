@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FirstViewController: UIViewController {
     
@@ -17,15 +18,42 @@ class FirstViewController: UIViewController {
     var randomQuoteSelector: Int?
     var randomColorSelector: Int?
     var quotes = [QuoteData]()
-    
+    @IBOutlet weak var TodayRandomTopLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadQuotes()
-        newQuoteTextLabel.text = "Press the button!"
-        newQuoteAuthorLabel.text = "MOTIVATION AWAITS"
+        
+        if Reachability.isConnectedToNetwork() == true {
+            
+            TodayRandomTopLabel.text = "Today's Quote"
+            
+            var refQuoteBody = Firebase(url: "https://dazzling-inferno-8467.firebaseio.com/Quote/QuoteBody/")
+            var refQuoteAuthor = Firebase(url: "https://dazzling-inferno-8467.firebaseio.com/Quote/QuoteAuthor/")
+            
+            refQuoteBody.observeEventType(.Value, withBlock: {
+                snapshot in
+                self.newQuoteTextLabel.text = snapshot.value
+                    as? String
+            })
+            
+            refQuoteAuthor.observeEventType(.Value, withBlock: {
+                snapshot in
+                self.newQuoteAuthorLabel.text = snapshot.value
+                    as? String
+            })
+            
+            loadQuotes()
+        }
+        else {
+            TodayRandomTopLabel.text = "Random Quotes"
+            loadQuotes()
+            newQuoteTextLabel.text = "Press the button!"
+            newQuoteAuthorLabel.text = "MOTIVATION AWAITS"
+        }
+        
+        
         
     }
   
@@ -171,6 +199,7 @@ class FirstViewController: UIViewController {
         randomQuoteSelector = random() % 50; // Generate random number from 0 to 14
         randomColorSelector = random() % 13; // Generate random number from 0 to 10
         
+        TodayRandomTopLabel.text = "Random Quotes"
         newQuoteTextLabel.text = quotes[randomQuoteSelector!].quoteDetail
         newQuoteAuthorLabel.text = quotes[randomQuoteSelector!].quoteAuthor
         
