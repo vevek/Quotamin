@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632831A61CD684D300CAC50B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632831A51CD684D300CAC50B /* SettingsViewController.swift */; };
 		63501B241CD67FF700782982 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63501B231CD67FF700782982 /* Reachability.swift */; };
 		638C1F9D1C3DA89E0013488B /* QuoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C1F9C1C3DA89E0013488B /* QuoteData.swift */; };
 		638C1F9F1C3DAD430013488B /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C1F9E1C3DAD430013488B /* QuoteTableViewCell.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		01B65EE320AE25F9CDE2D3E7 /* Pods_Quotamin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotamin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		632831A51CD684D300CAC50B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		63501B231CD67FF700782982 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		638C1F9C1C3DA89E0013488B /* QuoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteData.swift; sourceTree = "<group>"; };
 		638C1F9E1C3DAD430013488B /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				63A4AF451BCD787A00D7EFB9 /* SecondViewController.swift */,
 				638C1F9C1C3DA89E0013488B /* QuoteData.swift */,
 				63A4AF471BCD787A00D7EFB9 /* Main.storyboard */,
+				632831A51CD684D300CAC50B /* SettingsViewController.swift */,
 				638C1FA01C3DB0A20013488B /* QuoteTableViewController.swift */,
 				638C1F9E1C3DAD430013488B /* QuoteTableViewCell.swift */,
 				63A4AF4A1BCD787A00D7EFB9 /* Assets.xcassets */,
@@ -348,6 +351,7 @@
 			files = (
 				63501B241CD67FF700782982 /* Reachability.swift in Sources */,
 				63A4AF461BCD787A00D7EFB9 /* SecondViewController.swift in Sources */,
+				632831A61CD684D300CAC50B /* SettingsViewController.swift in Sources */,
 				63A4AF421BCD787A00D7EFB9 /* AppDelegate.swift in Sources */,
 				638C1F9D1C3DA89E0013488B /* QuoteData.swift in Sources */,
 				63A4AF441BCD787A00D7EFB9 /* FirstViewController.swift in Sources */,
