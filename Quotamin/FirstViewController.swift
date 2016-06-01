@@ -8,6 +8,10 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
+import FirebaseMessaging
+import FirebaseAnalytics
+
 
 class FirstViewController: UIViewController {
     
@@ -21,28 +25,37 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var TodayRandomTopLabel: UILabel!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let rootRef = FIRDatabase.database().reference()
         
         if Reachability.isConnectedToNetwork() == true {
             
             TodayRandomTopLabel.text = "Today's Quote"
             
-            var refQuoteBody = Firebase(url: "https://dazzling-inferno-8467.firebaseio.com/Quote/QuoteBody/")
-            var refQuoteAuthor = Firebase(url: "https://dazzling-inferno-8467.firebaseio.com/Quote/QuoteAuthor/")
             
-            refQuoteBody.observeEventType(.Value, withBlock: {
-                snapshot in
+            rootRef.child("Quote").child("QuoteBody").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+                // Get value
                 self.newQuoteTextLabel.text = snapshot.value
                     as? String
-            })
+            }) { (error) in
+                print(error.localizedDescription)
+            }
             
-            refQuoteAuthor.observeEventType(.Value, withBlock: {
-                snapshot in
+            
+            rootRef.child("Quote").child("QuoteAuthor").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+                // Get value
                 self.newQuoteAuthorLabel.text = snapshot.value
                     as? String
-            })
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+            
+           
+            
+            
             
             loadQuotes()
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6319BD111CF75F40001CA93E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6319BD101CF75F40001CA93E /* GoogleService-Info.plist */; };
 		632831A61CD684D300CAC50B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632831A51CD684D300CAC50B /* SettingsViewController.swift */; };
 		63501B241CD67FF700782982 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63501B231CD67FF700782982 /* Reachability.swift */; };
 		638C1F9D1C3DA89E0013488B /* QuoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C1F9C1C3DA89E0013488B /* QuoteData.swift */; };
@@ -20,7 +21,9 @@
 		63A4AF4E1BCD787A00D7EFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A4AF4C1BCD787A00D7EFB9 /* LaunchScreen.storyboard */; };
 		63A4AF591BCD787A00D7EFB9 /* QuotaminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4AF581BCD787A00D7EFB9 /* QuotaminTests.swift */; };
 		63A4AF641BCD787A00D7EFB9 /* QuotaminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4AF631BCD787A00D7EFB9 /* QuotaminUITests.swift */; };
-		8FEBFD84EC22DC2963A222C2 /* Pods_Quotamin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B65EE320AE25F9CDE2D3E7 /* Pods_Quotamin.framework */; };
+		7925C31F1977272C4108F9C4 /* Pods_Quotamin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D15AA11EB565826E9B0A9F /* Pods_Quotamin.framework */; };
+		A1157776A68F8832A6FF9886 /* Pods_QuotaminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D54D9B9FE1BA00BBB9453A /* Pods_QuotaminTests.framework */; };
+		C79D2D5374466A9D640789B6 /* Pods_QuotaminUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D87C5903669471F8683C2F /* Pods_QuotaminUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B65EE320AE25F9CDE2D3E7 /* Pods_Quotamin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotamin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D54D9B9FE1BA00BBB9453A /* Pods_QuotaminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotaminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1124C36B70C478977AB46A01 /* Pods-Quotamin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotamin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quotamin/Pods-Quotamin.debug.xcconfig"; sourceTree = "<group>"; };
+		18D15AA11EB565826E9B0A9F /* Pods_Quotamin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotamin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3A3C09ADA658FCF26A43EA /* Pods-QuotaminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotaminUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotaminUITests/Pods-QuotaminUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F6455B1401D8865B66FA491 /* Pods-QuotaminUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotaminUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotaminUITests/Pods-QuotaminUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54D87C5903669471F8683C2F /* Pods_QuotaminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotaminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6319BD101CF75F40001CA93E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		632831A51CD684D300CAC50B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		634DABBC1CEDAD0900F0AA00 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "../Library/Developer/Xcode/DerivedData/Quotamin-bmzgihwaduozeuazeloziehesqgb/Build/Products/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
 		63501B231CD67FF700782982 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		638C1F9C1C3DA89E0013488B /* QuoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteData.swift; sourceTree = "<group>"; };
 		638C1F9E1C3DAD430013488B /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
@@ -61,8 +71,9 @@
 		63A4AF5F1BCD787A00D7EFB9 /* QuotaminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotaminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A4AF631BCD787A00D7EFB9 /* QuotaminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaminUITests.swift; sourceTree = "<group>"; };
 		63A4AF651BCD787A00D7EFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B30E63CAD97AE6DA7C0F9AA2 /* Pods-Quotamin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotamin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quotamin/Pods-Quotamin.debug.xcconfig"; sourceTree = "<group>"; };
-		E485B788A23B084E08C0388D /* Pods-Quotamin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotamin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quotamin/Pods-Quotamin.release.xcconfig"; sourceTree = "<group>"; };
+		81B5A317159DF9016A29FD39 /* Pods-Quotamin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotamin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quotamin/Pods-Quotamin.release.xcconfig"; sourceTree = "<group>"; };
+		B3BAC2F26CA85740D7FBB148 /* Pods-QuotaminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotaminTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotaminTests/Pods-QuotaminTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA8AEC869C1E145052F8A719 /* Pods-QuotaminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotaminTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotaminTests/Pods-QuotaminTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FEBFD84EC22DC2963A222C2 /* Pods_Quotamin.framework in Frameworks */,
+				7925C31F1977272C4108F9C4 /* Pods_Quotamin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1157776A68F8832A6FF9886 /* Pods_QuotaminTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +97,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79D2D5374466A9D640789B6 /* Pods_QuotaminUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38730BD1964D270BC304DAD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1124C36B70C478977AB46A01 /* Pods-Quotamin.debug.xcconfig */,
+				81B5A317159DF9016A29FD39 /* Pods-Quotamin.release.xcconfig */,
+				B3BAC2F26CA85740D7FBB148 /* Pods-QuotaminTests.debug.xcconfig */,
+				BA8AEC869C1E145052F8A719 /* Pods-QuotaminTests.release.xcconfig */,
+				1C3A3C09ADA658FCF26A43EA /* Pods-QuotaminUITests.debug.xcconfig */,
+				3F6455B1401D8865B66FA491 /* Pods-QuotaminUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		63A4AF351BCD787A00D7EFB9 = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +124,8 @@
 				63A4AF571BCD787A00D7EFB9 /* QuotaminTests */,
 				63A4AF621BCD787A00D7EFB9 /* QuotaminUITests */,
 				63A4AF3F1BCD787A00D7EFB9 /* Products */,
-				70CD456723B109C6106CEB15 /* Pods */,
 				64C39210DE4673DFCD4016F1 /* Frameworks */,
+				38730BD1964D270BC304DAD9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +147,7 @@
 				63501B231CD67FF700782982 /* Reachability.swift */,
 				63A4AF451BCD787A00D7EFB9 /* SecondViewController.swift */,
 				638C1F9C1C3DA89E0013488B /* QuoteData.swift */,
+				6319BD101CF75F40001CA93E /* GoogleService-Info.plist */,
 				63A4AF471BCD787A00D7EFB9 /* Main.storyboard */,
 				632831A51CD684D300CAC50B /* SettingsViewController.swift */,
 				638C1FA01C3DB0A20013488B /* QuoteTableViewController.swift */,
@@ -153,18 +180,12 @@
 		64C39210DE4673DFCD4016F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				01B65EE320AE25F9CDE2D3E7 /* Pods_Quotamin.framework */,
+				634DABBC1CEDAD0900F0AA00 /* Firebase.framework */,
+				18D15AA11EB565826E9B0A9F /* Pods_Quotamin.framework */,
+				09D54D9B9FE1BA00BBB9453A /* Pods_QuotaminTests.framework */,
+				54D87C5903669471F8683C2F /* Pods_QuotaminUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		70CD456723B109C6106CEB15 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B30E63CAD97AE6DA7C0F9AA2 /* Pods-Quotamin.debug.xcconfig */,
-				E485B788A23B084E08C0388D /* Pods-Quotamin.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63A4AF681BCD787A00D7EFB9 /* Build configuration list for PBXNativeTarget "Quotamin" */;
 			buildPhases = (
-				1928F14A8C0E5BB31699F2ED /* Check Pods Manifest.lock */,
+				6A3221A2B6D590FE95403AB9 /* 📦 Check Pods Manifest.lock */,
 				63A4AF3A1BCD787A00D7EFB9 /* Sources */,
 				63A4AF3B1BCD787A00D7EFB9 /* Frameworks */,
 				63A4AF3C1BCD787A00D7EFB9 /* Resources */,
-				DF7C75990876E48177C96CCB /* Embed Pods Frameworks */,
-				20C97CFF964909FFF8E55858 /* Copy Pods Resources */,
+				37316739E5A0347874DB893E /* 📦 Embed Pods Frameworks */,
+				1E113E07173884F66186CE93 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63A4AF6B1BCD787A00D7EFB9 /* Build configuration list for PBXNativeTarget "QuotaminTests" */;
 			buildPhases = (
+				659187060BBEA4ADC5C626DC /* 📦 Check Pods Manifest.lock */,
 				63A4AF501BCD787A00D7EFB9 /* Sources */,
 				63A4AF511BCD787A00D7EFB9 /* Frameworks */,
 				63A4AF521BCD787A00D7EFB9 /* Resources */,
+				5327F2D9D396E5C015F19A61 /* 📦 Embed Pods Frameworks */,
+				16D17A1DA7E8353CD421FB5C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63A4AF6E1BCD787A00D7EFB9 /* Build configuration list for PBXNativeTarget "QuotaminUITests" */;
 			buildPhases = (
+				174DAEDD4632BCFB6BD21CA3 /* 📦 Check Pods Manifest.lock */,
 				63A4AF5B1BCD787A00D7EFB9 /* Sources */,
 				63A4AF5C1BCD787A00D7EFB9 /* Frameworks */,
 				63A4AF5D1BCD787A00D7EFB9 /* Resources */,
+				1C281F6FBE7B74DE0EABE2E4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +264,11 @@
 					63A4AF3D1BCD787A00D7EFB9 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = RNBM386DE4;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					63A4AF531BCD787A00D7EFB9 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -275,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A4AF4E1BCD787A00D7EFB9 /* LaunchScreen.storyboard in Resources */,
+				6319BD111CF75F40001CA93E /* GoogleService-Info.plist in Resources */,
 				63A4AF4B1BCD787A00D7EFB9 /* Assets.xcassets in Resources */,
 				63A4AF491BCD787A00D7EFB9 /* Main.storyboard in Resources */,
 			);
@@ -297,14 +329,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1928F14A8C0E5BB31699F2ED /* Check Pods Manifest.lock */ = {
+		16D17A1DA7E8353CD421FB5C /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotaminTests/Pods-QuotaminTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		174DAEDD4632BCFB6BD21CA3 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,14 +359,29 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		20C97CFF964909FFF8E55858 /* Copy Pods Resources */ = {
+		1C281F6FBE7B74DE0EABE2E4 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotaminUITests/Pods-QuotaminUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E113E07173884F66186CE93 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,19 +389,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quotamin/Pods-Quotamin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF7C75990876E48177C96CCB /* Embed Pods Frameworks */ = {
+		37316739E5A0347874DB893E /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quotamin/Pods-Quotamin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5327F2D9D396E5C015F19A61 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotaminTests/Pods-QuotaminTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		659187060BBEA4ADC5C626DC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A3221A2B6D590FE95403AB9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -496,7 +603,7 @@
 		};
 		63A4AF691BCD787A00D7EFB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B30E63CAD97AE6DA7C0F9AA2 /* Pods-Quotamin.debug.xcconfig */;
+			baseConfigurationReference = 1124C36B70C478977AB46A01 /* Pods-Quotamin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -510,7 +617,7 @@
 		};
 		63A4AF6A1BCD787A00D7EFB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E485B788A23B084E08C0388D /* Pods-Quotamin.release.xcconfig */;
+			baseConfigurationReference = 81B5A317159DF9016A29FD39 /* Pods-Quotamin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -524,6 +631,7 @@
 		};
 		63A4AF6C1BCD787A00D7EFB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3BAC2F26CA85740D7FBB148 /* Pods-QuotaminTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QuotaminTests/Info.plist;
@@ -536,6 +644,7 @@
 		};
 		63A4AF6D1BCD787A00D7EFB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8AEC869C1E145052F8A719 /* Pods-QuotaminTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QuotaminTests/Info.plist;
@@ -548,6 +657,7 @@
 		};
 		63A4AF6F1BCD787A00D7EFB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3A3C09ADA658FCF26A43EA /* Pods-QuotaminUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = QuotaminUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -560,6 +670,7 @@
 		};
 		63A4AF701BCD787A00D7EFB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6455B1401D8865B66FA491 /* Pods-QuotaminUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = QuotaminUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

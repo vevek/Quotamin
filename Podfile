@@ -3,8 +3,11 @@
 # Uncomment this line if you're using Swift
  use_frameworks!
 
+
 target 'Quotamin' do
-pod 'Firebase', '>= 2.5.1'
+  pod 'Firebase'
+  pod 'Firebase/Database'
+  pod 'Firebase/Messaging'
 end
 
 target 'QuotaminTests' do
@@ -14,4 +17,3 @@ end
 target 'QuotaminUITests' do
 
 end
-

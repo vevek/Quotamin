@@ -9,6 +9,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class SettingsViewController: UIViewController {
     
@@ -18,13 +19,9 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var QuoteBodyTextField: UITextField!
     @IBOutlet weak var QuoteAuthorTextField: UITextField!
     @IBOutlet weak var SendUpdateQuote: UIButton!
-    var A: String!
-    var B: String!
     
     
     
-    var refQuoteBody2 = Firebase(url: "https://dazzling-inferno-8467.firebaseio.com/Quote/QuoteBody/")
-    var refQuoteAuthor2 = Firebase(url: "https://dazzling-inferno-8467.firebaseio.com/Quote/QuoteAuthor/")
     
 
     
@@ -47,10 +44,31 @@ class SettingsViewController: UIViewController {
     
     @IBAction func QuoteSendButton(sender: AnyObject) {
         
-        A = QuoteBodyTextField.text
-        B = QuoteAuthorTextField.text
-        refQuoteBody2.setValue(QuoteBodyTextField?.text)
-        refQuoteAuthor2.setValue(QuoteAuthorTextField?.text)
+        if Reachability.isConnectedToNetwork() == true {
+            
+            let rootRef = FIRDatabase.database().reference()
+            
+            rootRef.child("Quote").child("QuoteBody").setValue(QuoteBodyTextField.text)
+            rootRef.child("Quote").child("QuoteAuthor").setValue(QuoteAuthorTextField.text)
+            
+            //Alert Code
+            let alertController = UIAlertController(title: "SENT!", message:
+                "Quote title and body uploaded!", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else {
+            
+            //Alert Code
+            let alertController = UIAlertController(title: "FAILED!", message:
+                "No internet connection!", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+        }
+        
     }
     
 }

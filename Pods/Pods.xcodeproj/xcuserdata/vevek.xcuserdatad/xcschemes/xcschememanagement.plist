@@ -4,12 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Firebase.xcscheme</key>
+		<key>Pods-Quotamin.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Quotamin.xcscheme</key>
+		<key>Pods-QuotaminTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-QuotaminUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1B2F1BEFEF0668EA347E3F1AD888927F</key>
+		<key>011704C13B19555B6F171FAC8412CD6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B7AC9326D819482593FE118E915409D7</key>
+		<key>2FE96B01E2103EE3712A2E42D5E9F65B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90EF169E276D3E702D3BED6952F55660</key>
 		<dict>
 			<key>primary</key>
 			<true/>
