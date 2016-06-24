@@ -25,7 +25,6 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var TodayRandomTopLabel: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

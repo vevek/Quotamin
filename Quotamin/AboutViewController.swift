@@ -1,15 +1,14 @@
 //
-//  Settings.swift
+//  AboutViewController.swift
 //  Quotamin
 //
-//  Created by Vevek Selvam on 2/5/16.
+//  Created by Vevek Selvam on 25/6/16.
 //  Copyright © 2016 Vevek Selvam. All rights reserved.
 //
 
-
 import UIKit
 
-class SettingsViewController: UIViewController {
+class AboutViewController: UIViewController {
     
     // MARK: Properties
     
@@ -17,16 +16,16 @@ class SettingsViewController: UIViewController {
     
     
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     
+        
         
         
     }
-
+    
     
     // MARK: Memory Warning Received
     
@@ -34,5 +33,5 @@ class SettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }

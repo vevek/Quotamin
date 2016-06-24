@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="16A201w" minimumToolsVersion="Xcode 7.0">
+    <entity name="Quote" syncable="YES">
+        <attribute name="quoteAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quoteDetail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quoteID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Quote" positionX="-63" positionY="-18" width="128" height="90"/>
+    </elements>
+</model>

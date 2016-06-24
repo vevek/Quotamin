@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Quotamin</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,24 +17,24 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.51</string>
+	<string>1.55</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.51</string>
+	<string>1.55</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>
-			<string>Image-Book</string>
+			<string>Image-School</string>
 			<key>UIApplicationShortcutItemSubtitle</key>
 			<string>Open Home Page</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Home</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).FirstViewController</string>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).OpenHome</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>
@@ -42,27 +44,17 @@
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Quote List</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).QuoteTableViewController</string>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).OpenQuoteList</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>
-			<string>Image-Alarm</string>
+			<string>Image-Settings</string>
 			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>Set daily reminders</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Reminders</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).FirstViewController</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string>Image-Gear</string>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>Configure Settings</string>
+			<string>Open Settings</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Settings</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).FirstViewController</string>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).OpenSettings</string>
 		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>
