@@ -65,7 +65,11 @@ class FirstViewController: UIViewController {
             newQuoteAuthorLabel.text = "MOTIVATION AWAITS"
         }
         
-        
+        // FIREBASE ANALYTICS
+        FIRAnalytics.logEventWithName(kFIREventSelectContent, parameters: [
+            kFIRParameterContentType:"ApplicationOpen",
+            kFIRParameterItemID:"1"
+            ])
         
     }
   
@@ -215,6 +219,10 @@ class FirstViewController: UIViewController {
         newQuoteTextLabel.text = quotes[randomQuoteSelector!].quoteDetail
         newQuoteAuthorLabel.text = quotes[randomQuoteSelector!].quoteAuthor
         
+        FIRAnalytics.logEventWithName(kFIREventSelectContent, parameters: [
+            kFIRParameterContentType:"RandomQuoteButtonPressed",
+            kFIRParameterItemID:"2"
+            ])
         
         
 

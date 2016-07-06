@@ -8,6 +8,8 @@
 
 
 import UIKit
+import Firebase
+import FirebaseAnalytics
 
 class SettingsViewController: UIViewController {
     
@@ -22,6 +24,10 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        FIRAnalytics.logEventWithName(kFIREventSelectContent, parameters: [
+            kFIRParameterContentType:"SettingsTabOpened",
+            kFIRParameterItemID:"4"
+            ])
      
         
         

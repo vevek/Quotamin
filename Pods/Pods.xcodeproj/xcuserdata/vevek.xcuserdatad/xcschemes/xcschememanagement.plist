@@ -19,20 +19,60 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Realm-iOS8.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm-iOS9.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift-iOS8.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift-iOS9.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>011704C13B19555B6F171FAC8412CD6C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2FE96B01E2103EE3712A2E42D5E9F65B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>90EF169E276D3E702D3BED6952F55660</key>
+		<key>32AC57BB77FAE90B58DD5C8B2124C6AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D508E8606B87CE90610CF5A4ECBE134</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E91E5A35E922DB93964F0F3090D3915</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9352AEEE73E4547B0CFB339F2D2237AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>984BA8F29AE3A5A309F239D02E23C8E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BBDF205A61BB66976B97193129C6EC66</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -38,13 +38,13 @@
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>
-			<string>Image-List</string>
+			<string>Image-Group</string>
 			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>List of Quotes</string>
+			<string>Open Connect</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Quote List</string>
+			<string>Connect</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).OpenQuoteList</string>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).OpenConnect</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>

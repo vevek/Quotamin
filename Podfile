@@ -8,10 +8,14 @@ target 'Quotamin' do
   pod 'Firebase'
   pod 'Firebase/Database'
   pod 'Firebase/Messaging'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'RealmSwift'
 end
 
 target 'QuotaminTests' do
-
+  pod 'RealmSwift'
 end
 
 target 'QuotaminUITests' do

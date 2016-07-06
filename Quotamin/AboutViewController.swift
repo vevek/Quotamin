@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAnalytics
 
 class AboutViewController: UIViewController {
     
@@ -21,6 +23,10 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        FIRAnalytics.logEventWithName(kFIREventSelectContent, parameters: [
+            kFIRParameterContentType:"AboutTabOpened",
+            kFIRParameterItemID:"5"
+            ])
         
         
         

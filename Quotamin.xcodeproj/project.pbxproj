@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6319BD111CF75F40001CA93E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6319BD101CF75F40001CA93E /* GoogleService-Info.plist */; };
 		632831A61CD684D300CAC50B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632831A51CD684D300CAC50B /* SettingsViewController.swift */; };
+		6331B0FD1D21531400FA3725 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331B0FC1D21531400FA3725 /* ConnectViewController.swift */; };
 		63501B241CD67FF700782982 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63501B231CD67FF700782982 /* Reachability.swift */; };
 		635955C51D1B159D001618D6 /* Quotamin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 635955C31D1B159D001618D6 /* Quotamin.xcdatamodeld */; };
 		635955C71D1B1FA7001618D6 /* quotescsv.csv in Resources */ = {isa = PBXBuildFile; fileRef = 635955C61D1B1FA7001618D6 /* quotescsv.csv */; };
@@ -22,6 +23,7 @@
 		63A4AF4E1BCD787A00D7EFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A4AF4C1BCD787A00D7EFB9 /* LaunchScreen.storyboard */; };
 		63A4AF591BCD787A00D7EFB9 /* QuotaminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4AF581BCD787A00D7EFB9 /* QuotaminTests.swift */; };
 		63A4AF641BCD787A00D7EFB9 /* QuotaminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4AF631BCD787A00D7EFB9 /* QuotaminUITests.swift */; };
+		63B4B07D1D21619A00A484B4 /* ChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B4B07C1D21619A00A484B4 /* ChatMessageTableViewCell.swift */; };
 		63D5DD001D1DCA3A001A7ED8 /* DeveloperConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5DCFF1D1DCA3A001A7ED8 /* DeveloperConsoleViewController.swift */; };
 		63D5DD021D1DD90E001A7ED8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5DD011D1DD90E001A7ED8 /* AboutViewController.swift */; };
 		7925C31F1977272C4108F9C4 /* Pods_Quotamin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D15AA11EB565826E9B0A9F /* Pods_Quotamin.framework */; };
@@ -55,6 +57,7 @@
 		54D87C5903669471F8683C2F /* Pods_QuotaminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotaminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6319BD101CF75F40001CA93E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		632831A51CD684D300CAC50B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6331B0FC1D21531400FA3725 /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		634DABBC1CEDAD0900F0AA00 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "../Library/Developer/Xcode/DerivedData/Quotamin-bmzgihwaduozeuazeloziehesqgb/Build/Products/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
 		63501B231CD67FF700782982 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		635955C41D1B159D001618D6 /* Quotamin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quotamin.xcdatamodel; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		63A4AF5F1BCD787A00D7EFB9 /* QuotaminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotaminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A4AF631BCD787A00D7EFB9 /* QuotaminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaminUITests.swift; sourceTree = "<group>"; };
 		63A4AF651BCD787A00D7EFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B4B07C1D21619A00A484B4 /* ChatMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageTableViewCell.swift; sourceTree = "<group>"; };
 		63D5DCFF1D1DCA3A001A7ED8 /* DeveloperConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperConsoleViewController.swift; sourceTree = "<group>"; };
 		63D5DD011D1DD90E001A7ED8 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		81B5A317159DF9016A29FD39 /* Pods-Quotamin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotamin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quotamin/Pods-Quotamin.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,10 +159,12 @@
 				6319BD101CF75F40001CA93E /* GoogleService-Info.plist */,
 				635955C61D1B1FA7001618D6 /* quotescsv.csv */,
 				63A4AF471BCD787A00D7EFB9 /* Main.storyboard */,
+				6331B0FC1D21531400FA3725 /* ConnectViewController.swift */,
 				632831A51CD684D300CAC50B /* SettingsViewController.swift */,
 				63D5DCFF1D1DCA3A001A7ED8 /* DeveloperConsoleViewController.swift */,
 				638C1FA01C3DB0A20013488B /* QuoteTableViewController.swift */,
 				638C1F9E1C3DAD430013488B /* QuoteTableViewCell.swift */,
+				63B4B07C1D21619A00A484B4 /* ChatMessageTableViewCell.swift */,
 				63A4AF4A1BCD787A00D7EFB9 /* Assets.xcassets */,
 				63A4AF4C1BCD787A00D7EFB9 /* LaunchScreen.storyboard */,
 				63A4AF4F1BCD787A00D7EFB9 /* Info.plist */,
@@ -470,6 +476,8 @@
 				63D5DD021D1DD90E001A7ED8 /* AboutViewController.swift in Sources */,
 				635955C51D1B159D001618D6 /* Quotamin.xcdatamodeld in Sources */,
 				632831A61CD684D300CAC50B /* SettingsViewController.swift in Sources */,
+				6331B0FD1D21531400FA3725 /* ConnectViewController.swift in Sources */,
+				63B4B07D1D21619A00A484B4 /* ChatMessageTableViewCell.swift in Sources */,
 				63A4AF421BCD787A00D7EFB9 /* AppDelegate.swift in Sources */,
 				638C1F9D1C3DA89E0013488B /* QuoteData.swift in Sources */,
 				63A4AF441BCD787A00D7EFB9 /* FirstViewController.swift in Sources */,
